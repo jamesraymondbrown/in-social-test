@@ -3062,10 +3062,13 @@ background: none;
 
 /* CSS FOR CARE INSTRUCTIONS METAFIELD */
 
+.metafield-care-instructions-container {
+  border: 2px dotted red;
+}
+
 .metafield-care-instructions {
   display: flex;
   flex-direction: column;
-  border: 2px dotted red;
 }
 
 .metafield-care-instructions-image {
