@@ -13,7 +13,7 @@ $(document).ready(function () {
         900,
         "swing",
         function () {
-          window.location.hash = target; --> Uncomment to display hash in the URL
+          // window.location.hash = target; --> Uncomment to display hash in the URL
         }
       );
   });
