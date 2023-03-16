@@ -3063,7 +3063,6 @@ background: none;
 /* CSS FOR CARE INSTRUCTIONS METAFIELD */
 
 .metafield-care-instructions-container {
-  border: 2px dotted red;
   display: flex;
   flex-direction: row;
   width: 400px;
