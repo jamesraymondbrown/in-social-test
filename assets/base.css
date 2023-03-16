@@ -3107,3 +3107,9 @@ metafield-care-instructions-text {
     width: 5vw;
   }
 }
+
+/* Use custom font */
+
+body {
+    font-family: 'MuseoSans' !important;
+}
