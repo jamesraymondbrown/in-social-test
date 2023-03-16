@@ -280,6 +280,39 @@
                     {%- endif -%}
                   </div>
                 </div>
+
+              {% comment %} display product care instructions when selected {% endcomment %}
+              {% if product.metafields.custom.care_instructions %}
+                <div class="metafield-care-instructions-container">
+                  {% for metafield in product.metafields.custom.care_instructions.value %}
+
+                    <div class="metafield-care-instructions">
+                      {% comment %} Check metafield name and display corresponding image {% endcomment %}
+                      {% if metafield == "Wash On Cold" %}
+                      <img class="metafield-care-instructions-image" src="{{ 'Wash_On_Cold.jpg' | file_img_url: '2048x2048' }}" />
+                      {% elsif metafield == "Do Not Use Softener" %}
+                      <img class="metafield-care-instructions-image" src="{{ 'Do_Not_Use_Softener.jpg' | file_img_url: '2048x2048' }}" />
+                      {% elsif metafield == "Wash and Iron Inside Out" %}
+                      <img class="metafield-care-instructions-image" src="{{ 'Wash_And_Iron_Inside_Out.jpg' | file_img_url: '2048x2048' }}" />
+                      {% elsif metafield == "Iron" %}
+                      <img class="metafield-care-instructions-image" src="{{ 'Iron.jpg' | file_img_url: '2048x2048' }}" />
+                      {% elsif metafield == "Hang To Dry" %}
+                      <img class="metafield-care-instructions-image" src="{{ 'Hang_To_Dry.jpg' | file_img_url: '2048x2048' }}" />
+                      {% elsif metafield == "Do Not Handwash" %}
+                      <img class="metafield-care-instructions-image" src="{{ 'Do_Not_Hand_Wash.jpg' | file_img_url: '2048x2048' }}" />
+                      {% elsif metafield == "Do Not Dry Clean" %}
+                      <img class="metafield-care-instructions-image" src="{{ 'Do_Not_Dry_Clean.jpg' | file_img_url: '2048x2048' }}" />
+                      {% elsif metafield == "Wash With Lights" %}
+                      <img class="metafield-care-instructions-image" src="{{ 'Wash_With_Lights.jpg' | file_img_url: '2048x2048' }}" />
+                      {% endif %}
+
+                      <p class="metafield-care-instructions text">{{ metafield }}</p>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+
+              
               {%- when 'share' -%}
                 {% assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin %}
                 {% render 'share-button', block: block, share_link: share_url %}

@@ -3032,28 +3032,78 @@ details-disclosure > details {
   }
 }
 
+/* CSS FOR VARIANT COLOR SWATCHES */
+
 .product-form__input input[type="radio"] + .color-swatch {
-border: 3px solid #f4f5ff; /* Change this hex code to change the color of the non-active/non-selected variant */
-width: 40px;
-height: 40px;
-padding: 0;
+  border: 3px solid #f4f5ff; /* Change this hex code to change the color of the non-active/non-selected variant */
+  width: 40px;
+  height: 40px;
+  padding: 0;
 }
 .product-form__input input[type="radio"]:checked + .color-swatch,
 .product-form__input input[type="radio"]:hover + .color-swatch {
-border: 3px solid #ccd1d1; /* Change this hex code to change the color of the active/selected variant */
+  border: 3px solid #ccd1d1; /* Change this hex code to change the color of the active/selected variant */
 }
 .product-form__input input[type="radio"] + .swatch {
-border: 3px solid #f4f5ff; /* Change this hex code to change the color of the non-active/non-selected variant */
-width: 40px;
-height: 40px;
-padding: 0;
-color: #000;
-display: inline-flex;
-justify-content: center;
-align-items: center;
+  border: 3px solid #f4f5ff; /* Change this hex code to change the color of the non-active/non-selected variant */
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: #000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .product-form__input input[type="radio"]:checked + .swatch,
 .product-form__input input[type="radio"]:hover + .swatch {
-border: 3px solid #ccd1d1; /* Change this hex code to change the color of the active/selected variant */
-background: none;
+  border: 3px solid #ccd1d1; /* Change this hex code to change the color of the active/selected variant */
+  background: none;
+}
+
+/* CSS FOR CARE INSTRUCTIONS METAFIELD */
+
+.metafield-care-instructions-container {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+}
+
+.metafield-care-instructions {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 7pt;
+  letter-spacing: 1px;
+  line-height: 10px;
+}
+
+.metafield-care-instructions-image {
+  width: 50px;
+  padding: none;
+}
+
+metafield-care-instructions-text {
+  padding: none;
+  margin-top: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .metafield-care-instructions-container {
+    width: 90vw;
+    margin: 0;
+  }
+
+  .metafield-care-instructions {
+    font-size: 6pt;
+    line-height: 8px;
+  }
+
+  .metafield-care-instructions-image {
+    width: 11.5vw;
+  }
+
+  metafield-care-instructions-text {
+    width: 5vw;
+  }
 }

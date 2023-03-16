@@ -84,6 +84,12 @@
             "show_dynamic_checkout": true
           }
         },
+        "d3c569bb-7346-4e76-952d-e151e93b492f": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.care_instructions %}\n                <div class=\"metafield-care-instructions-container\">\n                  {% for metafield in product.metafields.custom.care_instructions.value %}\n\n                    <div class=\"metafield-care-instructions\">\n                      {% comment %} Check metafield name and display corresponding image {% endcomment %}\n                      {% if metafield == \"Wash On Cold\" %}\n                      <img class=\"metafield-care-instructions-image\" src=\"{{ 'Wash_On_Cold.jpg' | file_img_url: '2048x2048' }}\" \/>\n                      {% elsif metafield == \"Do Not Use Softener\" %}\n                      <img class=\"metafield-care-instructions-image\" src=\"{{ 'Do_Not_Use_Softener.jpg' | file_img_url: '2048x2048' }}\" \/>\n                      {% elsif metafield == \"Wash and Iron Inside Out\" %}\n                      <img class=\"metafield-care-instructions-image\" src=\"{{ 'Wash_And_Iron_Inside_Out.jpg' | file_img_url: '2048x2048' }}\" \/>\n                      {% elsif metafield == \"Iron\" %}\n                      <img class=\"metafield-care-instructions-image\" src=\"{{ 'Iron.jpg' | file_img_url: '2048x2048' }}\" \/>\n                      {% elsif metafield == \"Hang To Dry\" %}\n                      <img class=\"metafield-care-instructions-image\" src=\"{{ 'Hang_To_Dry.jpg' | file_img_url: '2048x2048' }}\" \/>\n                      {% elsif metafield == \"Do Not Handwash\" %}\n                      <img class=\"metafield-care-instructions-image\" src=\"{{ 'Do_Not_Hand_Wash.jpg' | file_img_url: '2048x2048' }}\" \/>\n                      {% elsif metafield == \"Do Not Dry Clean\" %}\n                      <img class=\"metafield-care-instructions-image\" src=\"{{ 'Do_Not_Dry_Clean.jpg' | file_img_url: '2048x2048' }}\" \/>\n                      {% elsif metafield == \"Wash With Lights\" %}\n                      <img class=\"metafield-care-instructions-image\" src=\"{{ 'Wash_With_Lights.jpg' | file_img_url: '2048x2048' }}\" \/>\n                      {% endif %}\n\n                      <p class=\"metafield-care-instructions text\">{{ metafield }}<\/p>\n                    <\/div>\n                  {% endfor %}\n                <\/div>\n              {% endif %}"
+          }
+        },
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6": {
           "type": "share",
           "settings": {
@@ -94,12 +100,15 @@
           "type": "rating",
           "settings": {
           }
+<<<<<<< HEAD
         },
         "b505429c-fa3d-4299-a25f-0e07c940ee9c": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{{ product.metafields.custom.care_instructions | media_tag }}"
           }
+=======
+>>>>>>> 33869cf43ddc89e09e1ad4782b1771a4759d0ce6
         }
       },
       "block_order": [
@@ -109,9 +118,15 @@
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-3",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-4",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-5",
+<<<<<<< HEAD
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6",
         "1298d74d-e934-4e91-8ec9-a8018daed345",
         "b505429c-fa3d-4299-a25f-0e07c940ee9c"
+=======
+        "d3c569bb-7346-4e76-952d-e151e93b492f",
+        "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6",
+        "1298d74d-e934-4e91-8ec9-a8018daed345"
+>>>>>>> 33869cf43ddc89e09e1ad4782b1771a4759d0ce6
       ],
       "settings": {
         "product": "tie-dye-hoodie",
