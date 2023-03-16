@@ -3064,4 +3064,5 @@ background: none;
 
 .metafield-care-instructions {
   display: inline
+  border-box: 2px dotted red;
 }
