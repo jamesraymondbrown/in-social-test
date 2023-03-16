@@ -3109,6 +3109,6 @@ metafield-care-instructions-text {
 }
 
 @font-face {
-  font-family: "Font name";
+  font-family: "MuseoSans-100";
   src: url("{{ '[MuseoSans-100.woff]' | asset_url }}") format("[woff]");
 }
