@@ -286,6 +286,7 @@
                 <div class="metafield-care-instructions-container">
                   {% for metafield in product.metafields.custom.care_instructions.value %}
 
+                    {% comment %} Check metafield to see which corresponding image to display {% endcomment %}
                     <div class="metafield-care-instructions">
                       {% if metafield == "Wash On Cold" %}
                       <img class="metafield-care-instructions-image" src="{{ 'Wash_On_Cold.jpg' | file_img_url: '2048x2048' }}" />
@@ -305,8 +306,6 @@
                       <img class="metafield-care-instructions-image" src="{{ 'Wash_With_Lights.jpg' | file_img_url: '2048x2048' }}" />
                       {% endif %}
 
-                    
-                      
                       <p class="metafield-care-instructions text">{{ metafield }}<p>
                     </div>
                   {% endfor %}
