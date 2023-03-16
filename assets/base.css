@@ -413,7 +413,7 @@ h1 {
 h2 {
   font-family: 'MuseoSans' !important;
   font-style: var(--font-heading-style);
-  font-size: 35px;
+  font-size: 90px;
   font-weight: 700;
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-foreground));
