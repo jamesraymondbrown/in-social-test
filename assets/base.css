@@ -3063,14 +3063,14 @@ background: none;
 /* CSS FOR CARE INSTRUCTIONS METAFIELD */
 
 .metafield-care-instructions {
-  display: inline
+  display: inline;
   border: 2px dotted red;
 }
 
 .metafield-care-instructions-image {
-  padding: none
+  padding: none;
 }
 
 metafield-care-instructions-text {
-  padding: none
+  padding: none;
 }
