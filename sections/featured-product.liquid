@@ -362,6 +362,7 @@
                 {% render 'icon-with-text', block: block %}
             {%- endcase -%}
           {%- endfor -%}
+          {% comment %} --> commenting out link to product page, since it's a single page store
           <a
             {% if product == blank %}
               role="link" aria-disabled="true"
@@ -373,6 +374,7 @@
             {{ 'products.product.view_full_details' | t }}
             {% render 'icon-arrow' %}
           </a>
+          {% endcomment %}
         </product-info>
       </div>
       {%- if section.settings.media_position == 'right' -%}
