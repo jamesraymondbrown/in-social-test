@@ -138,11 +138,55 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "c191d720-e046-40e1-b46f-628e12fab498": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18349128974636__c191d720-e046-40e1-b46f-628e12fab498-1678998681708b6746-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "About us",
+            "heading_size": "h1"
+          }
+        },
+        "template--18349128974636__c191d720-e046-40e1-b46f-628e12fab498-1678998681708b6746-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Panda Hoodies was founded in 2010 by a group of friends who shared a passion for cute and comfortable clothing. They noticed a gap in the market for high-quality hoodies featuring panda designs, which they believed would appeal to a wide range of customers.<\/p><p>In 2015, Panda Hoodies launched their first international online store, which allowed them to reach customers all over the world. They also began to offer other clothing items featuring panda designs, such as t-shirts and leggings.<\/p><p>Today, Panda Hoodies is a well-known brand in the fashion industry, with a strong online presence and a loyal customer base. The company continues to innovate and expand their product line while maintaining their commitment to quality and customer satisfaction.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--18349128974636__c191d720-e046-40e1-b46f-628e12fab498-1678998681708b6746-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18349128974636__c191d720-e046-40e1-b46f-628e12fab498-1678998681708b6746-0",
+        "template--18349128974636__c191d720-e046-40e1-b46f-628e12fab498-1678998681708b6746-1",
+        "template--18349128974636__c191d720-e046-40e1-b46f-628e12fab498-1678998681708b6746-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "231ab799-bc4e-4768-be5e-90ce840c39db",
-    "c7a21860-6e4f-4b9d-bb87-c71b46162382"
+    "c7a21860-6e4f-4b9d-bb87-c71b46162382",
+    "c191d720-e046-40e1-b46f-628e12fab498"
   ]
 }
