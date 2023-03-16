@@ -40,7 +40,7 @@
         "b524a879-5818-444a-b644-38547ec65244": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.care_instructions %}\n\n{% for metafield in product.metafields.custom.care_instructions.value %}\n\n<img src=\"{{ 'Do_Not_Dry_Clean.jpg' | file_img_url: '2048x2048' }}\" \/>\n\n<p class=\"metafield-care-instructions\">{{ metafield }}<p>\n\n{% endfor %}\n\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.custom.care_instructions %}\n\n{% for metafield in product.metafields.custom.care_instructions.value %}\n\n<div class = \"metafield-care-instructions\">\n<img class=\"metafield-care-instructions-image\" src=\"{{ 'Do_Not_Dry_Clean.jpg' | file_img_url: '2048x2048' }}\" \/>\n\n<p class=\"metafield-care-instructions text\">{{ metafield }}<p>\n\n<\/div>\n\n{% endfor %}\n\n{% endif %}"
           }
         },
         "description": {
