@@ -283,6 +283,7 @@
 
               {% comment %} display product care instructions when selected {% endcomment %}
               {% if product.metafields.custom.care_instructions %}
+                <div class="metafield-care-instructions-container"
                 {% for metafield in product.metafields.custom.care_instructions.value %}
 
                 <div class="metafield-care-instructions">
@@ -291,6 +292,7 @@
                 <p class="metafield-care-instructions text">{{ metafield }}<p>
                 </div>
                 {% endfor %}
+                </div>
               {% endif %}
 
               
