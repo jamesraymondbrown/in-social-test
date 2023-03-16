@@ -285,11 +285,11 @@
               {% if product.metafields.custom.care_instructions %}
                 {% for metafield in product.metafields.custom.care_instructions.value %}
 
-                <span class="metafield-care-instructions">
+                <div class="metafield-care-instructions">
                 <img class="metafield-care-instructions-image" src="{{ 'Do_Not_Dry_Clean.jpg' | file_img_url: '2048x2048' }}" />
 
                 <p class="metafield-care-instructions text">{{ metafield }}<p>
-                </span>
+                </div>
                 {% endfor %}
               {% endif %}
 
