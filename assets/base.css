@@ -3107,12 +3107,9 @@ metafield-care-instructions-text {
 
   .metafield-care-instructions-image {
     width: 12vw;
-    padding: none;
   }
 
   metafield-care-instructions-text {
     width: 5vw;
-    padding: none;
-    margin-top: 2px !imortant;
 }
 }
