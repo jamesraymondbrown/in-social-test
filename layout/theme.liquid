@@ -33,7 +33,9 @@
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
 
+    {%  comment %} code to enable the scrolling to different home-page when header is clicked {% endcomment %}
     {{ custom.js | asset_url | script_tag }}
+    
     {{ content_for_header }}
 
     {%- liquid
