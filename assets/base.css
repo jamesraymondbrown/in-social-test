@@ -3107,3 +3107,8 @@ metafield-care-instructions-text {
     width: 5vw;
   }
 }
+
+@font-face {
+  font-family: "Font name";
+  src: url("{{ '[font-file-name]' | asset_url }}") format("[font-format]");
+}
