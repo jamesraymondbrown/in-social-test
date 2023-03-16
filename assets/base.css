@@ -3110,6 +3110,7 @@ metafield-care-instructions-text {
   }
 
   metafield-care-instructions-text {
+    width: 8vw;
     padding: none;
     margin-top: 2px !imortant;
 }
