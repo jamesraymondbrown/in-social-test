@@ -3092,7 +3092,7 @@ metafield-care-instructions-text {
   .metafield-care-instructions-container {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 90vw;
   }
 
   .metafield-care-instructions {
