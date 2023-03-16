@@ -11,10 +11,7 @@ $(document).ready(function () {
           scrollTop: $target.offset().top,
         },
         900,
-        "swing",
-        function () {
-          // window.location.hash = target; --> Uncomment to display hash in the URL
-        }
+        "swing"
       );
   });
 });
