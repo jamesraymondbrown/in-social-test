@@ -2,8 +2,7 @@
 $(document).ready(function () {
   $('a[href^="#"]').on("click", function (event) {
     event.preventDefault();
-    const target = this.hash;
-    const $target = $(target);
+    const $target = $(this.hash);
     $("html, body")
       .stop()
       .animate(
