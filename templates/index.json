@@ -89,6 +89,11 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "1298d74d-e934-4e91-8ec9-a8018daed345": {
+          "type": "rating",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -98,7 +103,8 @@
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-3",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-4",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-5",
-        "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6"
+        "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6",
+        "1298d74d-e934-4e91-8ec9-a8018daed345"
       ],
       "settings": {
         "product": "tie-dye-hoodie",
