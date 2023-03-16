@@ -287,7 +287,12 @@
                   {% for metafield in product.metafields.custom.care_instructions.value %}
 
                     <div class="metafield-care-instructions">
+                      {% if metafield == "Wash On Cold" %}
                       <img class="metafield-care-instructions-image" src="{{ 'Do_Not_Dry_Clean.jpg' | file_img_url: '2048x2048' }}" />
+                      {% elsif metafield == "Do Not Use Soften" %}
+                      <img class="metafield-care-instructions-image" src="{{ 'Do_Not_Dry_Clean.jpg' | file_img_url: '2048x2048' }}" />
+                      {% endif %}
+                      
                       <p class="metafield-care-instructions text">{{ metafield }}<p>
                     </div>
                   {% endfor %}
