@@ -59,7 +59,8 @@
         class="disabled"
       {% endif %}
     >
-      {% comment %}Check product for variants. If variants exist and color-swatch metafield is present, display swatches {% endcomment %}
+    
+      {% comment %} Check product for variants. If variants exist and color-swatch metafield is present, display swatches {% endcomment %}
       {% assign variant_needed = null %}
       {% for variant in product.variants %}
         {% if variant.options contains value %}
