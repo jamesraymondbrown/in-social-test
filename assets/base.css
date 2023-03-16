@@ -3064,6 +3064,8 @@ background: none;
 
 .metafield-care-instructions-container {
   border: 2px dotted red;
+  display: flex;
+  flex-direction: row;
 }
 
 .metafield-care-instructions {
