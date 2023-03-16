@@ -40,7 +40,7 @@
         "b524a879-5818-444a-b644-38547ec65244": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{{ custom.care_instructions }}"
+            "custom_liquid": "{{ product.metafields.custom.care_instructions }}"
           }
         },
         "description": {
