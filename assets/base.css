@@ -411,7 +411,7 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: "MuseoSans-100";
+  font-family: "var(--font-heading-family)";
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
@@ -3106,9 +3106,4 @@ metafield-care-instructions-text {
   metafield-care-instructions-text {
     width: 5vw;
   }
-}
-
-@font-face {
-  font-family: "MuseoSans-100";
-  src: url("{{ '[MuseoSans-100.woff]' | asset_url }}") format("[woff]");
 }
