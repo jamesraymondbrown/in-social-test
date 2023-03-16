@@ -3099,7 +3099,7 @@ metafield-care-instructions-text {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 7pt;
+    font-size: 6pt;
     letter-spacing: 1px;
     line-height: 10px;
   }
@@ -3110,7 +3110,7 @@ metafield-care-instructions-text {
   }
 
   metafield-care-instructions-text {
-    width: 8vw;
+    width: 5vw;
     padding: none;
     margin-top: 2px !imortant;
 }
