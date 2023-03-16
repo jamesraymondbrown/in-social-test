@@ -3090,8 +3090,6 @@ metafield-care-instructions-text {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .metafield-care-instructions-container {
-    display: flex;
-    flex-direction: row;
     width: 90vw;
     margin: 0;
   }
