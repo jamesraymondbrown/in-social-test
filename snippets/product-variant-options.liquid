@@ -61,12 +61,12 @@
     >
     
       {% comment %} If variants exist and color-swatch metafield is present, display swatches {% endcomment %}
-      {% assign variant_needed = null %}
-      {% for variant in product.variants %}
-        {% if variant.options contains value %}
-          {% assign variant_needed = variant %}
-        {% endif %}
-      {% endfor %}
+          {% assign variant_needed = null %}
+            {% for variant in product.variants %}
+              {% if variant.options contains value %}
+                {% assign variant_needed = variant %}
+              {% endif %}
+            {% endfor %}
             {% if variant_needed.metafields.color.swatch and option.name == "Color" %}
               <label class="color-swatch" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-option="{{ value }}" style="background-color: {{variant_needed.metafields.color.swatch}}">
                 &nbsp
