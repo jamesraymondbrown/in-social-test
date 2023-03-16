@@ -286,8 +286,8 @@
                 <div class="metafield-care-instructions-container">
                   {% for metafield in product.metafields.custom.care_instructions.value %}
 
-                    {% comment %} Check metafield name and display corresponding image {% endcomment %}
                     <div class="metafield-care-instructions">
+                      {% comment %} Check metafield name and display corresponding image {% endcomment %}
                       {% if metafield == "Wash On Cold" %}
                       <img class="metafield-care-instructions-image" src="{{ 'Wash_On_Cold.jpg' | file_img_url: '2048x2048' }}" />
                       {% elsif metafield == "Do Not Use Softener" %}
@@ -306,7 +306,7 @@
                       <img class="metafield-care-instructions-image" src="{{ 'Wash_With_Lights.jpg' | file_img_url: '2048x2048' }}" />
                       {% endif %}
 
-                      <p class="metafield-care-instructions text">{{ metafield }}<p>
+                      <p class="metafield-care-instructions text">{{ metafield }}</p>
                     </div>
                   {% endfor %}
                 </div>
