@@ -9,7 +9,7 @@ $(document).ready(function () {
         {
           scrollTop: $target.offset().top,
         },
-        2000,
+        900,
         "swing"
       );
   });
