@@ -3072,13 +3072,15 @@ background: none;
 .metafield-care-instructions {
   display: flex;
   flex-direction: column;
-  width: 20px;
+
 }
 
 .metafield-care-instructions-image {
+  width: 20px;
   padding: none;
 }
 
 metafield-care-instructions-text {
+  width: 20px;
   padding: none;
 }
