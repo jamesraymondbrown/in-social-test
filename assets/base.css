@@ -3032,14 +3032,6 @@ details-disclosure > details {
   }
 }
 
-.header__heading-link {
-  background-color: aqua;
-}
-
-body {
-  font-family: "Courier New", Courier, monospace;
-}
-
 .product-form__input input[type="radio"] + .color-swatch {
 border: 3px solid #f4f5ff; /* Change this hex code to change the color of the non-active/non-selected variant */
 width: 40px;
