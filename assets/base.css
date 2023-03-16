@@ -3097,11 +3097,7 @@ metafield-care-instructions-text {
   }
 
   .metafield-care-instructions {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     font-size: 6pt;
-    letter-spacing: 1px;
     line-height: 8px;
   }
 
