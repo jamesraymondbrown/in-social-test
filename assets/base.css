@@ -3093,7 +3093,7 @@ metafield-care-instructions-text {
     display: flex;
     flex-direction: row;
     width: 90vw;
-    margin: none;
+    margin: 0;
   }
 
   .metafield-care-instructions {
