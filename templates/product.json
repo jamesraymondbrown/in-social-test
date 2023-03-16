@@ -37,6 +37,12 @@
             "show_dynamic_checkout": true
           }
         },
+        "b524a879-5818-444a-b644-38547ec65244": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ custom.care_instructions }}"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -47,12 +53,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "b524a879-5818-444a-b644-38547ec65244": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{{ product.metafields.custom.instructions_test }}"
-          }
         }
       },
       "block_order": [
@@ -62,9 +62,9 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "b524a879-5818-444a-b644-38547ec65244",
         "description",
-        "share",
-        "b524a879-5818-444a-b644-38547ec65244"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
