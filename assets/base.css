@@ -3072,6 +3072,7 @@ background: none;
 .metafield-care-instructions {
   display: flex;
   flex-direction: column;
+  width: 20px;
 }
 
 .metafield-care-instructions-image {
