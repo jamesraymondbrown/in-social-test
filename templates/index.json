@@ -98,7 +98,7 @@
         "b505429c-fa3d-4299-a25f-0e07c940ee9c": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{{ product.metafields.custom.care_instructions | img_tag }}"
+            "custom_liquid": "{{ product.metafields.custom.care_instructions | media_tag }}"
           }
         }
       },
