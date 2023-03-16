@@ -87,7 +87,7 @@
         "d3c569bb-7346-4e76-952d-e151e93b492f": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{{ product.metafields.custom.care_instructions }}\n\nSNAIL"
+            "custom_liquid": "{{ product.metafields.custom.instructions_test }}"
           }
         },
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6": {
