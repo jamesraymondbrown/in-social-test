@@ -3066,3 +3066,11 @@ background: none;
   display: inline
   border: 2px dotted red;
 }
+
+.metafield-care-instructions-image {
+  padding: none
+}
+
+metafield-care-instructions-text {
+  padding: none
+}
