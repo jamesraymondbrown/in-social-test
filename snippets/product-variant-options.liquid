@@ -69,7 +69,7 @@
       {% endfor %}
       {% if variant_needed.metafields.color.swatch and option.name == "Color" %}
         <label class="color-swatch" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-option="{{ value }}" style="background-color: {{variant_needed.metafields.color.swatch}}">
-          <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+
           &nbsp
         </label>
       {% else %}
