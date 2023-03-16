@@ -391,6 +391,10 @@ body,
   background-color: rgba(var(--color-foreground), 0.2);
 }
 
+* {
+  font-family: 'MuseoSans' !important;
+}
+
 .text-body {
   font-family: 'MuseoSans' !important;
   font-size: 1.5rem;
