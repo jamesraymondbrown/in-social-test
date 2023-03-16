@@ -100,15 +100,6 @@
           "type": "rating",
           "settings": {
           }
-<<<<<<< HEAD
-        },
-        "b505429c-fa3d-4299-a25f-0e07c940ee9c": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{{ product.metafields.custom.care_instructions | media_tag }}"
-          }
-=======
->>>>>>> 33869cf43ddc89e09e1ad4782b1771a4759d0ce6
         }
       },
       "block_order": [
@@ -118,19 +109,13 @@
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-3",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-4",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-5",
-<<<<<<< HEAD
-        "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6",
-        "1298d74d-e934-4e91-8ec9-a8018daed345",
-        "b505429c-fa3d-4299-a25f-0e07c940ee9c"
-=======
         "d3c569bb-7346-4e76-952d-e151e93b492f",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6",
         "1298d74d-e934-4e91-8ec9-a8018daed345"
->>>>>>> 33869cf43ddc89e09e1ad4782b1771a4759d0ce6
       ],
       "settings": {
         "product": "tie-dye-hoodie",
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "secondary_background": false,
         "media_size": "medium",
         "constrain_to_viewport": true,
