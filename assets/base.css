@@ -396,7 +396,6 @@ body,
 }
 
 .text-body {
-  font-family: 'MuseoSans' !important;
   font-size: 1.5rem;
   letter-spacing: 0.06rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
@@ -408,7 +407,6 @@ body,
 
 h1
 {
-  font-family: 'MuseoSans' !important;
   font-style: var(--font-heading-style);
   font-weight: 900 !important;
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
@@ -418,7 +416,6 @@ h1
 }
 
 h2 {
-  font-family: 'MuseoSans' !important;
   font-style: var(--font-heading-style);
   font-size: 35px !important;
   font-weight: 700 !important;
