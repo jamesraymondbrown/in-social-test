@@ -284,13 +284,13 @@
               {% comment %} display product care instructions when selected {% endcomment %}
               {% if product.metafields.custom.care_instructions %}
                 <div class="metafield-care-instructions-container"
-                {% for metafield in product.metafields.custom.care_instructions.value %}
+                  {% for metafield in product.metafields.custom.care_instructions.value %}
 
-                <div class="metafield-care-instructions">
-                <img class="metafield-care-instructions-image" src="{{ 'Do_Not_Dry_Clean.jpg' | file_img_url: '2048x2048' }}" />
+                  <div class="metafield-care-instructions">
+                  <img class="metafield-care-instructions-image" src="{{ 'Do_Not_Dry_Clean.jpg' | file_img_url: '2048x2048' }}" />
 
-                <p class="metafield-care-instructions text">{{ metafield }}<p>
-                </div>
+                  <p class="metafield-care-instructions text">{{ metafield }}<p>
+                  </div>
                 {% endfor %}
                 </div>
               {% endif %}
