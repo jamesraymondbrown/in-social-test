@@ -3090,6 +3090,7 @@ details-disclosure > details {
 
 .metafield-care-instructions {
   display: flex;
+  width: 50px;
   flex-direction: column;
   text-align: center;
   font-size: 7pt;
