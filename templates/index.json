@@ -200,12 +200,23 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "c8830711-0c56-41b6-881a-1a3733ba5ee0": {
+      "type": "page",
+      "settings": {
+        "page": "store-locator",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "96005cb7-8e74-4a78-aa83-708fca123576",
     "231ab799-bc4e-4768-be5e-90ce840c39db",
     "c191d720-e046-40e1-b46f-628e12fab498",
-    "c7a21860-6e4f-4b9d-bb87-c71b46162382"
+    "c7a21860-6e4f-4b9d-bb87-c71b46162382",
+    "c8830711-0c56-41b6-881a-1a3733ba5ee0"
   ]
 }
