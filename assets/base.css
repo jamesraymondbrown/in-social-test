@@ -402,7 +402,7 @@ body,
 }
 
 h1 {
-    font-family: 'MuseoSans' !important;
+  font-family: 'MuseoSans' !important;
   font-style: var(--font-heading-style);
   font-weight: 900;
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
@@ -410,7 +410,16 @@ h1 {
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
   word-break: break-word;
 }
-h2,
+h2 {
+  font-family: 'MuseoSans' !important;
+  font-style: var(--font-heading-style);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
+  color: rgb(var(--color-foreground));
+  line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
+  word-break: break-word;
+}
 h3,
 h4,
 h5,
