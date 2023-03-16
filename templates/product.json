@@ -47,6 +47,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "b524a879-5818-444a-b644-38547ec65244": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ product.metafields.custom.instructions_test }}"
+          }
         }
       },
       "block_order": [
@@ -57,7 +63,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "b524a879-5818-444a-b644-38547ec65244"
       ],
       "settings": {
         "enable_sticky_info": true,
