@@ -3086,3 +3086,31 @@ metafield-care-instructions-text {
   padding: none;
   margin-top: 2px !imortant;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .metafield-care-instructions-container {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+  }
+
+  .metafield-care-instructions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 7pt;
+    letter-spacing: 1px;
+    line-height: 10px;
+  }
+
+  .metafield-care-instructions-image {
+    width: 50px;
+    padding: none;
+  }
+
+  metafield-care-instructions-text {
+    padding: none;
+    margin-top: 2px !imortant;
+}
+}
