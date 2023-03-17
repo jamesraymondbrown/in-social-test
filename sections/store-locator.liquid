@@ -52,8 +52,8 @@
           <p class="hours">Open everyday 11am to 3pm<p>
         </div>
       </div>
-      <div class="map">
-        <iframe src={{map_url}} width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-container">
+        <iframe class="iframe-map" src={{map_url}} width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
@@ -90,12 +90,86 @@
         margin: 0;
       }
 
-      .map {
+      .map-container {
         margin-top: 5px;
       }
       .locator-section-header {
         text-align: center;
       }
+
+      .iframe-map {
+        border: 2px dotted red;
+      }
+
+    @media only screen and (min-width: 1150px) and (max-width: 1450px) {
+        /* For mobile phones: */
+      .store-locator-container {
+        margin: auto;
+        padding-left: 4vw;
+        padding-right: 4vw;
+      }
+
+      .location-button {
+        width: 43vw;
+      }
+
+      .iframe-map {
+        width: 45vw !important;
+      }
+    }
+
+        @media only screen and (min-width: 769px) and (max-width: 1149px) {
+        /* For mobile phones: */
+      .store-locator-container {
+        margin: auto;
+        padding-left: 4vw;
+        padding-right: 4vw;
+      }
+
+      .location-button {
+        width: 43vw;
+      }
+
+      .iframe-map {
+        width: 45vw !important;
+      }
+
+      .address {
+        font-size: 20px !important;
+      }
+
+      .hours {
+        font-size: 15px !important;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+      .store-locator-container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+
+      .location-button {
+        height: 12vh;
+        width: 93vw;
+      }
+
+      .iframe-map {
+        width: 93vw !important;
+      }
+
+      .address {
+        font-size: 19px !important;
+      }
+
+      .hours {
+        font-size: 12px !important;
+      }
+    }
 
 
     </style>
