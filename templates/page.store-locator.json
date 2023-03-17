@@ -2,6 +2,18 @@
   "sections": {
     "main": {
       "type": "main-page-store-locator",
+      "blocks": {
+        "5329b45c-75f9-4dc9-88f8-00b5364f5624": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you have a question?",
+            "answer": "<p>I have an answer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5329b45c-75f9-4dc9-88f8-00b5364f5624"
+      ],
       "settings": {
       }
     }
