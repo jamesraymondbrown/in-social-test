@@ -3115,7 +3115,7 @@ metafield-care-instructions-text {
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1060px) {
-  /* To handle problem breakpoitnfor metafields care instructions: */
+  /* To handle problem breakpoit for metafields care instructions: */
 
   .metafield-care-instructions {
     width: 46px;
