@@ -18,22 +18,48 @@
     </style>
     
 {% schema %}
-  {
-    "name": "Store Locator",
-    "settings": [
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "Store Locator"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Store Locator"
-      }
-    ]
-  }
+{
+  "name": "Store Locator",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Store Locator"
+    }
+  ],
+  "blocks" : [
+    {
+      "type" : "single-location",
+      "name" : "Location",
+      "settings" : [
+        {
+          "type" : "text",
+          "id" : "address",
+          "label" : "address",
+          "default" : "Address"
+        },
+        {
+          "type" : "text",
+          "id" : "description",
+          "label" : "Description",
+          "default" : "Description"
+        },
+        {
+          "type": "text",
+          "id" : "maps-link",
+          "label" :  "Link",
+          "default": "Insert a Google Maps link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Store Locator"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
