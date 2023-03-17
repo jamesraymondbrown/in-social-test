@@ -7,9 +7,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/ph_design-timeline.jpg",
-            "heading": "Welcome, Pandas",
+            "heading": "Creating comfort",
             "heading_size": "h1",
-            "subheading": "Comfort awaits...",
+            "subheading": "since 2010",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -204,7 +204,7 @@
     "e1ce87fa-f4e8-472c-8ad7-3fd87c782a6d": {
       "type": "store-locator",
       "settings": {
-        "heading": "Store Locator"
+        "heading": ""
       }
     }
   },
