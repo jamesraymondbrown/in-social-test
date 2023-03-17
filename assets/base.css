@@ -3136,12 +3136,11 @@ metafield-care-instructions-text {
   flex-direction: row;
 }
 
-.featured-product-price {
-
-}
-
 .spr-badge {
   padding-left: 10px;
 }
 
+.spr-icon {
+  color: #F2C1AE;
+}
 
