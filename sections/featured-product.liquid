@@ -152,15 +152,17 @@
                   {%- endif -%}
                 </h2>
               {%- when 'price' -%}
-                <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                  {%- render 'price',
-                    product: product,
-                    use_variant: true,
-                    show_badges: true,
-                    price_class: 'price--large'
-                  -%}
+                <div class="price-and-stars-container">
+                  <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                    {%- render 'price',
+                      product: product,
+                      use_variant: true,
+                      show_badges: true,
+                      price_class: 'price--large'
+                    -%}
+                  </div>
+                  <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
                 </div>
-              <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
                 {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                   <div class="product__tax caption rte">
                     {%- if shop.taxes_included -%}
