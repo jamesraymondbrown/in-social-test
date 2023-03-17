@@ -392,7 +392,7 @@ body,
 }
 
 * {
-  font-family: 'MuseoSans' !important;
+  font-family: "MuseoSans" !important;
 }
 
 .text-body {
@@ -405,8 +405,7 @@ body,
   font-size: 16px;
 }
 
-h1
-{
+h1 {
   font-style: var(--font-heading-style);
   font-weight: 900 !important;
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
@@ -430,7 +429,7 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: 'MuseoSans' !important;
+  font-family: "MuseoSans" !important;
   font-style: var(--font-heading-style);
   font-size: 24px !important;
   font-weight: 500 !important;
@@ -3085,7 +3084,6 @@ details-disclosure > details {
 .metafield-care-instructions-container {
   display: flex;
   flex-direction: row;
-  width: 400px;
 }
 
 .metafield-care-instructions {
@@ -3106,6 +3104,26 @@ details-disclosure > details {
 metafield-care-instructions-text {
   padding: none;
   margin-top: 2px;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1060px) {
+  /* To handle problem breakpoitnfor metafields care instructions: */
+
+  .metafield-care-instructions {
+    width: 46px;
+    font-size: 7pt;
+    letter-spacing: 1px;
+    line-height: 10px;
+  }
+
+  .metafield-care-instructions-image {
+    width: 46px;
+  }
+
+  metafield-care-instructions-text {
+    padding: none;
+    margin-top: 2px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -3141,6 +3159,18 @@ metafield-care-instructions-text {
 }
 
 .spr-icon {
-  color: #233A59 !important;
+  color: #233a59 !important;
 }
 
+.spr-container {
+  margin: auto;
+  margin-bottom: 40px;
+  width: 80vw;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .spr-container {
+    width: 95vw;
+  }
+}
