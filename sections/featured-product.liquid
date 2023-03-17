@@ -442,7 +442,7 @@
     {% render 'product-media-modal', product: product, variant_images: media_to_render %}
   </div>
 
-  
+  <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
 </section>
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
