@@ -3051,6 +3051,14 @@ details-disclosure > details {
   }
 }
 
+/* Add to cart button additional styling */
+
+.product-form__submit {
+  border: 2px solid #233a59;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 /* CSS FOR VARIANT COLOR SWATCHES */
 
 .product-form__input input[type="radio"] + .color-swatch {
@@ -3136,14 +3144,15 @@ metafield-care-instructions-text {
   .metafield-care-instructions {
     font-size: 6pt;
     line-height: 8px;
+    margin: 0;
   }
 
   .metafield-care-instructions-image {
     width: 11.5vw;
   }
 
-  metafield-care-instructions-text {
-    width: 5vw;
+  .metafield-care-instructions-text {
+    width: 11.5vw;
   }
 }
 
@@ -3166,6 +3175,13 @@ metafield-care-instructions-text {
   margin: auto;
   margin-bottom: 40px;
   width: 80vw;
+}
+
+@media only screen and (min-width: 1600px) {
+  /* For mobile phones: */
+  .spr-container {
+    width: 1280px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
