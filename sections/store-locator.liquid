@@ -1,4 +1,15 @@
 <script>
+
+  // I never did get the store locator working. Just can't figure out how to make liquid update on a button click. So the buttons just display an alert. 
+
+  // Some possible solutions I've considered:
+  // Ajax html requests? - we'd need to store the iframe url info in some sort of api I think, which I didn't have time to build
+  // Metafields? - I considered it but wasn't able to find the right route to implement. Still not sure if that could work or not
+  // Building an app? - Would be time consuming but reliable, if this is a common request from merchants.
+  // Using an app? - would be easy but the instructions told me not to haha
+  // Or could go to a more traditional "search by location" store locator, where a user inputs their location and we contact the google API to see
+  // where each location is in relation to the user's inputted location. I think that'd be easier to implement, but isn't exactly what the "client" wanted
+  
   document.addEventListener('DOMContentLoaded', function() {
     $('#brampton-location').on('click', function(event){
     alert("clicked Brampton, update map url to 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92823.86575698238!2d-79.6074903428608!3d43.76349345574679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3b78887572cf%3A0xc2bd8fb5ca162f85!2s7855%20Finch%20Ave%20W%2C%20Brampton%2C%20ON%20L6T%200B2!5e0!3m2!1sen!2sca!4v1679017749378!5m2!1sen!2sca'")
