@@ -3128,3 +3128,12 @@ metafield-care-instructions-text {
     width: 5vw;
   }
 }
+
+/* CSS for Product Reviews displaying on home page */
+
+.shopify-product-reviews-badge {
+  display: flex;
+  flex-direction: row;
+}
+
+
