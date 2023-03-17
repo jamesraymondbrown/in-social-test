@@ -230,7 +230,10 @@
                 </div>
 
                 {% comment %}
-                  display product care instructions when selected
+                  Display product care instructions when selected. I'd ideally like to refactor this so that it queries an object, whose
+                  key-values correspond to the image file that we want to display. I think that would be cleaner than the current
+                  implementation full of "if" and "elsif" statements. But this works for now, and the store locator stole too much
+                  of my time for me to return to this one
                 {% endcomment %}
                 {% if product.metafields.custom.care_instructions %}
                   <div class="metafield-care-instructions-container">
