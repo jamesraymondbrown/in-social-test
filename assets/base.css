@@ -3136,6 +3136,10 @@ metafield-care-instructions-text {
   flex-direction: row;
 }
 
+.featured-product-price {
+  padding-right: 10px;
+}
+
 .shopify-product-reviews-badge {
   padding-left: 10px !important;
 }
