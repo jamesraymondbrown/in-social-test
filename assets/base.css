@@ -3131,7 +3131,7 @@ metafield-care-instructions-text {
 
 /* CSS for Product Reviews displaying on home page */
 
-.shopify-product-reviews-badge {
+.price-and-stars-container {
   display: flex;
   flex-direction: row;
 }
