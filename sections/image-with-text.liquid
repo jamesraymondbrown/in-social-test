@@ -28,13 +28,13 @@
             px)
             {{ settings.page_width | minus: 100 | divided_by: 2 }}
             px,
-                                                                      (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                                                                                              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
           {%- endcapture -%}
           {{
-                            section.settings.image
-                            | image_url: width: 1500
-                            | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
-                          }}
+                              section.settings.image
+                              | image_url: width: 1500
+                              | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+                            }}
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
@@ -85,7 +85,7 @@
       {
         "type": "text",
         "id": "section_id",
-        "label": "about-us"
+        "label": "Section Anchor"
       },
       {
         "type": "image_picker",
