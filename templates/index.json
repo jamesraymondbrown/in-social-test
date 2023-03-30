@@ -111,6 +111,11 @@
             "show_dynamic_checkout": true
           }
         },
+        "4fc56088-8d59-4a87-acca-605f8dab4af6": {
+          "type": "care_guide",
+          "settings": {
+          }
+        },
         "d3c569bb-7346-4e76-952d-e151e93b492f": {
           "type": "custom_liquid",
           "settings": {
@@ -122,11 +127,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "4fc56088-8d59-4a87-acca-605f8dab4af6": {
-          "type": "care_guide",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -136,9 +136,9 @@
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-3",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-4",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-5",
+        "4fc56088-8d59-4a87-acca-605f8dab4af6",
         "d3c569bb-7346-4e76-952d-e151e93b492f",
-        "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6",
-        "4fc56088-8d59-4a87-acca-605f8dab4af6"
+        "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6"
       ],
       "settings": {
         "product": "tie-dye-hoodie",
