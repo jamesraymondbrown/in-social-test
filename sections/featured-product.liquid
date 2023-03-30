@@ -107,7 +107,18 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {% when 'care_guide' %}
-                <p>Here's where the care guide will appear</p>
+                {% if product.metafields.custom.care_instructions.value.size > 0 %}
+                  <div class="metafield-care-instructions-container">
+                    {% for metafield in product.metafields.custom.care_instructions.value %}
+                      <div class="metafield-care-instructions">
+                        {% assign care_handle = metafield | strip | handle | append: ".jpg" %}
+                        {% comment %} All of the images will work if I re-upload the photos using snake-case name formatting {% endcomment %}
+                        <img class="metafield-care-instructions-image" src="{{ care_handle | file_img_url: '150x150' }}">
+                        <p>{{ metafield }}</p>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
 
               {%- when '@app' -%}
                 {% render block %}
@@ -235,7 +246,7 @@
                 {% comment %}
                   display product care instructions when selected
                 {% endcomment %}
-                {% comment %}
+
                 {% if product.metafields.custom.care_instructions %}
                   <div class="metafield-care-instructions-container">
                     {% for metafield in product.metafields.custom.care_instructions.value %}
@@ -265,7 +276,7 @@
                     {% endfor %}
                   </div>
                 {% endif %}
-                {% endcomment %}
+
 
 
               {%- when 'share' -%}
