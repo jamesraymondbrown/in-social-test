@@ -111,6 +111,11 @@
             "show_dynamic_checkout": true
           }
         },
+        "4fc56088-8d59-4a87-acca-605f8dab4af6": {
+          "type": "care_guide",
+          "settings": {
+          }
+        },
         "d3c569bb-7346-4e76-952d-e151e93b492f": {
           "type": "custom_liquid",
           "settings": {
@@ -131,6 +136,7 @@
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-3",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-4",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-5",
+        "4fc56088-8d59-4a87-acca-605f8dab4af6",
         "d3c569bb-7346-4e76-952d-e151e93b492f",
         "template--18349128974636__231ab799-bc4e-4768-be5e-90ce840c39db-167893537460216507-6"
       ],
@@ -172,6 +178,7 @@
         "template--18349128974636__c191d720-e046-40e1-b46f-628e12fab498-1678998681708b6746-1"
       ],
       "settings": {
+        "section_id": "about-us",
         "image": "shopify:\/\/shop_images\/pexels-phillip-pfeiffer-2407600.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",

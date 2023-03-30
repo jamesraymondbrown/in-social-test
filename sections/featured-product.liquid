@@ -106,6 +106,20 @@
 
           {%- for block in section.blocks -%}
             {%- case block.type -%}
+              {% when 'care_guide' %}
+                {% if product.metafields.custom.care_instructions.value.size > 0 %}
+                  <div class="metafield-care-instructions-container">
+                    {% for metafield in product.metafields.custom.care_instructions.value %}
+                      <div class="metafield-care-instructions">
+                        {% assign care_handle = metafield | strip | handle | append: ".jpg" %}
+                        {% comment %} All of the images will work if I re-upload the photos using snake-case name formatting {% endcomment %}
+                        <img class="metafield-care-instructions-image" src="{{ care_handle | asset_img_url: '150x150' }}">
+                        <p>{{ metafield }}</p>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
@@ -235,14 +249,13 @@
                   implementation full of "if" and "elsif" statements. But this works for now, and the store locator stole too much
                   of my time for me to return to this one
                 {% endcomment %}
+
+                {% comment %}
                 {% if product.metafields.custom.care_instructions %}
                   <div class="metafield-care-instructions-container">
                     {% for metafield in product.metafields.custom.care_instructions.value %}
 
                       <div class="metafield-care-instructions">
-                        {% comment %}
-                          Check metafield name and display corresponding image
-                        {% endcomment %}
                         {% if metafield == "Wash On Cold" %}
                           <img class="metafield-care-instructions-image" src="{{ 'Wash_On_Cold.jpg' | file_img_url: '2048x2048' }}"/>
                         {% elsif metafield == "Do Not Use Softener" %}
@@ -267,6 +280,8 @@
                     {% endfor %}
                   </div>
                 {% endif %}
+                {% endcomment %}
+
 
 
               {%- when 'share' -%}
@@ -484,6 +499,11 @@
       "groups": ["header", "footer"]
     },
     "blocks": [
+      {
+        "type": "care_guide",
+        "name": "Care Guide",
+        "limit": 1
+      },
       {
         "type": "@app"
       },
