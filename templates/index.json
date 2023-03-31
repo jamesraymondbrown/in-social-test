@@ -226,7 +226,7 @@
           "settings": {
             "address": "456 Real St",
             "hours": "9am-5pm Monday to Friday",
-            "maps_src": ""
+            "maps_src": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d27226.45407529732!2d-79.57449487536314!3d43.6022267986609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4876b0587f71%3A0x2c8fe90ae88c8b9b!2s1305%20Dixie%20Rd%2C%20Mississauga%2C%20ON%20L5E%202P5!5e0!3m2!1sen!2sca!4v1679028404749!5m2!1sen!2sca"
           }
         },
         "7f51a62c-77f0-48fd-9194-581a3dd2389b": {
@@ -234,7 +234,7 @@
           "settings": {
             "address": "Scarborough",
             "hours": "Open sometimes, closed sometimes",
-            "maps_src": ""
+            "maps_src": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d38086.03647810737!2d-79.27142594683508!3d43.84043880586352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d71a399d3525%3A0xd5aa90e932d8d3e!2s6415%20Steeles%20Ave%20E%2C%20Scarborough%2C%20ON%20M1X%201N5!5e0!3m2!1sen!2sca!4v1679028456350!5m2!1sen!2sca"
           }
         }
       },
