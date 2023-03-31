@@ -215,14 +215,22 @@
         "4be7f835-d646-43b8-b58d-80d18bbef4e3": {
           "type": "single-location",
           "settings": {
-            "address": "Address226 Fake St",
+            "address": "226 Fake St",
+            "maps-link": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d27226.45407529732!2d-79.57449487536314!3d43.6022267986609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4876b0587f71%3A0x2c8fe90ae88c8b9b!2s1305%20Dixie%20Rd%2C%20Mississauga%2C%20ON%20L5E%202P5!5e0!3m2!1sen!2sca!4v1679028404749!5m2!1sen!2sca"
+          }
+        },
+        "8dcb7a7a-03e5-4379-95cc-e8d475aa7593": {
+          "type": "single-location",
+          "settings": {
+            "address": "456 Real St",
             "maps-link": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d27226.45407529732!2d-79.57449487536314!3d43.6022267986609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4876b0587f71%3A0x2c8fe90ae88c8b9b!2s1305%20Dixie%20Rd%2C%20Mississauga%2C%20ON%20L5E%202P5!5e0!3m2!1sen!2sca!4v1679028404749!5m2!1sen!2sca"
           }
         }
       },
       "block_order": [
         "42e97c1e-bb8f-4338-bb26-2e5bdc39298d",
-        "4be7f835-d646-43b8-b58d-80d18bbef4e3"
+        "4be7f835-d646-43b8-b58d-80d18bbef4e3",
+        "8dcb7a7a-03e5-4379-95cc-e8d475aa7593"
       ],
       "settings": {
         "heading": "Store Locator"
