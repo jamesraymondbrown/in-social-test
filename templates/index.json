@@ -209,6 +209,7 @@
           "type": "single-location",
           "settings": {
             "address": "123 Fake St",
+            "hours": "",
             "maps-link": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d92823.86575698238!2d-79.6074903428608!3d43.76349345574679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3b78887572cf%3A0xc2bd8fb5ca162f85!2s7855%20Finch%20Ave%20W%2C%20Brampton%2C%20ON%20L6T%200B2!5e0!3m2!1sen!2sca!4v1679017749378!5m2!1sen!2sca"
           }
         },
@@ -216,6 +217,7 @@
           "type": "single-location",
           "settings": {
             "address": "226 Fake St",
+            "hours": "",
             "maps-link": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d19249.034334555115!2d-79.5342832195093!3d43.77221949456904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2fd0515f365b%3A0xd751ee997420d7d!2s4001%20Steeles%20Ave%20W%2C%20North%20York%2C%20ON%20M3N%202T8!5e0!3m2!1sen!2sca!4v1679024107231!5m2!1sen!2sca"
           }
         },
@@ -223,6 +225,7 @@
           "type": "single-location",
           "settings": {
             "address": "456 Real St",
+            "hours": "",
             "maps-link": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d27226.45407529732!2d-79.57449487536314!3d43.6022267986609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4876b0587f71%3A0x2c8fe90ae88c8b9b!2s1305%20Dixie%20Rd%2C%20Mississauga%2C%20ON%20L5E%202P5!5e0!3m2!1sen!2sca!4v1679028404749!5m2!1sen!2sca"
           }
         },
@@ -230,6 +233,7 @@
           "type": "single-location",
           "settings": {
             "address": "Scarborough",
+            "hours": "Open sometimes, closed sometimes",
             "maps-link": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d38086.03647810737!2d-79.27142594683508!3d43.84043880586352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d71a399d3525%3A0xd5aa90e932d8d3e!2s6415%20Steeles%20Ave%20E%2C%20Scarborough%2C%20ON%20M1X%201N5!5e0!3m2!1sen!2sca!4v1679028456350!5m2!1sen!2sca"
           }
         }
