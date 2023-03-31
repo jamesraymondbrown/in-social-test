@@ -35,18 +35,18 @@
   {% if section.blocks.size > 0 %}
     <div class="locations">
       {% for block in section.blocks %}
-        <div class="location-button" data-store-location="{{ block.settings.maps_src }}" {% if forloop.first %} active {% endif %}>
-          {% if block.settings.address != blank %}
-            <h3 class="address">{{block.settings.address | escape}}
-            </h3>
-            <p class="hours">{{block.settings.hours | escape}}
-            </p>
-            <p>{{section.blocks.first.settings.maps_src}}
-            </p>
-            <p>{{block.settings.maps_src}}
-            </p>
-          {% endif %}
-        </div>
+        {% if block.settings.maps_src != blank %}
+          <div class="location-button" data-store-location="{{ block.settings.maps_src }}" {% if forloop.first %} active {% endif %}>
+            {% if block.settings.address != blank %}
+              <h3 class="address">{{block.settings.address | escape}}
+              </h3>
+              <p class="hours">{{block.settings.hours | escape}}
+              </p>
+              <p>{{section.blocks.first.settings.maps_src}}
+              </p>
+            {% endif %}
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
   {% endif %}
@@ -257,4 +257,4 @@
       }
     ]
   }
-{% endschema %}}
+{% endschema %}}}}}}}}}}}}}}}}
