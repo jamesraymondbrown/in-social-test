@@ -31,8 +31,7 @@
   <h2 id="store-locator" class="locator-section-header">{{section.settings.heading}}
   </h2>
 {% endif %}
-<div class="store-locator-container"></div>
-
+<div class="store-locator-container">
 {% if section.blocks.size > 0 %}
   <div class="locations">
     {% for block in section.blocks %}
@@ -50,8 +49,9 @@
 
 
 
-{%- comment -%}
-  <div class="locations">
+
+
+  {%- comment -%} <div class="locations">
   <div id="brampton-location" class="location-button">
   <h3 class="address">7855 Finch Avenue West Malton, Brampton ON L6T 0B2</h3>
   <p class="hours">Mon-Sat: 9 am to 5pm</p>
@@ -70,11 +70,14 @@
   <h3 class="address">6415 Steeles Avenue East Scarborough, Toronto ON M1X 0C7</h3>
   <p class="hours">Open everyday 11am to 3pm</p>
   <p></p>
-  </div>
-  </div>{%- endcomment -%}
+  </div> 
+  </div> {%- endcomment -%}
 <div class="map-container">
   <iframe class="iframe-map" src={{map_url}} width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div></div><style>
+</div></div>
+</div>
+
+<style>
 .store-locator-container {
   display: flex;
   flex-direction: row;
@@ -233,8 +236,7 @@ more easily editable. But I didn't think it wise to spend too much time coding t
         }, {
           "type": "text",
           "id": "hours",
-          "label": "Hours",
-          "default": "Hours"
+          "label": "Hours"
         }, {
           "type": "text",
           "id": "maps-link",
