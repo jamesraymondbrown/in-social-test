@@ -1,201 +1,214 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    $('#brampton-location').on('click', function(event){
-    alert("clicked Brampton, update map url to 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92823.86575698238!2d-79.6074903428608!3d43.76349345574679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3b78887572cf%3A0xc2bd8fb5ca162f85!2s7855%20Finch%20Ave%20W%2C%20Brampton%2C%20ON%20L6T%200B2!5e0!3m2!1sen!2sca!4v1679017749378!5m2!1sen!2sca'")
+    $('#brampton-location').on('click', function(event) {
+      alert("clicked Brampton, update map url to 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92823.86575698238!2d-79.6074903428608!3d43.76349345574679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3b78887572cf%3A0xc2bd8fb5ca162f85!2s7855%20Finch%20Ave%20W%2C%20Brampton%2C%20ON%20L6T%200B2!5e0!3m2!1sen!2sca!4v1679017749378!5m2!1sen!2sca'")
     })
   });
 
   document.addEventListener('DOMContentLoaded', function() {
-    $('#toronto-location').on('click', function(event){
+    $('#toronto-location').on('click', function(event) {
       alert("clicked Toronto, update map url to 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19249.034334555115!2d-79.5342832195093!3d43.77221949456904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2fd0515f365b%3A0xd751ee997420d7d!2s4001%20Steeles%20Ave%20W%2C%20North%20York%2C%20ON%20M3N%202T8!5e0!3m2!1sen!2sca!4v1679024107231!5m2!1sen!2sca'")
     })
   });
 
   document.addEventListener('DOMContentLoaded', function() {
-    $('#mississauga-location').on('click', function(event){
+    $('#mississauga-location').on('click', function(event) {
       alert("clicked Mississauga, update map url to 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27226.45407529732!2d-79.57449487536314!3d43.6022267986609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4876b0587f71%3A0x2c8fe90ae88c8b9b!2s1305%20Dixie%20Rd%2C%20Mississauga%2C%20ON%20L5E%202P5!5e0!3m2!1sen!2sca!4v1679028404749!5m2!1sen!2sca'")
     })
   });
 
   document.addEventListener('DOMContentLoaded', function() {
-    $('#scarborough-location').on('click', function(event){
+    $('#scarborough-location').on('click', function(event) {
       alert("clicked Scarborough, update map url to 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38086.03647810737!2d-79.27142594683508!3d43.84043880586352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d71a399d3525%3A0xd5aa90e932d8d3e!2s6415%20Steeles%20Ave%20E%2C%20Scarborough%2C%20ON%20M1X%201N5!5e0!3m2!1sen!2sca!4v1679028456350!5m2!1sen!2sca'")
     })
   });
-
 </script>
 
 
 {% assign map_url = '"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92823.86575698238!2d-79.6074903428608!3d43.76349345574679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3b78887572cf%3A0xc2bd8fb5ca162f85!2s7855%20Finch%20Ave%20W%2C%20Brampton%2C%20ON%20L6T%200B2!5e0!3m2!1sen!2sca!4v1679017749378!5m2!1sen!2sca"' %}
 
-{% if section.settings.heading != blank %} 
-<h2 id="store-locator" class="locator-section-header">{{section.settings.heading}}</h2>
+{% if section.settings.heading != blank %}
+  <h2 id="store-locator" class="locator-section-header">{{section.settings.heading}}
+  </h2>
 {% endif %}
-    <div class="store-locator-container">
-      <div class="locations">
-        <div id="brampton-location" class="location-button">
-          <h3 class="address">7855 Finch Avenue West Malton, Brampton ON L6T 0B2</h3>
-          <p class="hours">Mon-Sat: 9 am to 5pm</p>
-        </div>
-        <div id="toronto-location" class="location-button">
-          <h3 class="address">4001 Steeles Avenue West, Toronto ON L4K 2Y2</h3>
-          <p class="hours">Mon, Wed, Fri: 10am to 6pm | Tue, Thu, Sat: 12pm to 9pm<p>
-        </div>
-        <div id="mississauga-location" class="location-button">
-          <h3 class="address">1305 Dixie Road Lakeview, Mississauga ON L5E 2P8</h3>
-          <p class="hours">Every 1st and 3rd Sunday of the month 9am to 5pm<p>
-        </div>
-        <div id="scarborough-location" class="location-button">
-          <h3 class="address">6415 Steeles Avenue East Scarborough, Toronto ON M1X 0C7</h3>
-          <p class="hours">Open everyday 11am to 3pm<p>
-        </div>
+<div class="store-locator-container"></div>
+
+{% if section.blocks.size > 0 %}
+  <div class="locations">
+    {% for block in section.blocks %}
+      <div class="location-button">
+        {% if block.settings.address != blank %}
+          <h3 class="address">{{block.settings.address | escape}}
+          </h3>
+          <p class="hours">{{block.settings.hours | escape}}
+          </p>
+        {% endif %}
       </div>
-      <div class="map-container">
-        <iframe class="iframe-map" src={{map_url}} width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-
-    <style>
-      .store-locator-container {
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        width: 1270px;
-      }
-
-      .location-button {
-        display: inline-block;
-        height: 130px;
-        width: 500px;
-        margin: 5px;
-        padding: 10px;
-        text-align: center;
-        color: #ffffff;
-        background-color: #D99191;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0px 5px 5px #BF6385;
-        cursor: pointer;
-      }
-
-      .location-button:hover {
-        background-color: #BF6385;
-        box-shadow: 0px 5px 5px #D99191;
-      }
-
-      .address {
-        margin: 0;
-      }
-
-      .map-container {
-        margin-top: 5px;
-      }
-      .locator-section-header {
-        text-align: center;
-      }
-
-      .iframe-map {
-        border: 2px dotted red;
-      }
-
-    @media only screen and (min-width: 1150px) and (max-width: 1450px) {
-        /* For mobile phones: */
-      .store-locator-container {
-        margin: auto;
-        padding-left: 4vw;
-        padding-right: 4vw;
-        width: 94vw;
-      }
-
-      .location-button {
-        width: 40vw;
-      }
-
-      .iframe-map {
-        width: 45vw !important;
-      }
-    }
-
-    @media only screen and (min-width: 769px) and (max-width: 1149px) {
-        /* For mobile phones: */
-      .store-locator-container {
-        margin: auto;
-        padding-left: 4vw;
-        padding-right: 4vw;
-        width: 98vw;
-      }
-
-      .locations: {
-        width: 45vw;
-      }
-
-      .location-button {
-        width: 43vw;
-      }
-
-      .iframe-map {
-        width: 45vw !important;
-      }
-
-      .address {
-        font-size: 20px !important;
-      }
-
-      .hours {
-        font-size: 15px !important;
-      }
-    }
-
-    @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-      .store-locator-container {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        width: 98vw;
-      }
-
-      .locations {
-        width: 95vw;
-      }
-
-      .location-button {
-        height: 12vh;
-        width: 93vw;
-      }
-
-      .map-container {
-        width: 96vw;
-        padding-left: 1vw;
-      }
-
-      .iframe-map {
-        width: 93vw !important;
-      }
-
-      .address {
-        font-size: 16px !important;
-      }
-
-      .hours {
-        font-size: 11px !important;
-        margin: 0;
-      }
-    }
+    {% endfor %}
+  </div>
+{% endif %}
 
 
-    </style>
-    
 
-{%- comment -%} Schema contains some skeletons of where I'd ideally like to go with it. 
+{%- comment -%}
+  <div class="locations">
+  <div id="brampton-location" class="location-button">
+  <h3 class="address">7855 Finch Avenue West Malton, Brampton ON L6T 0B2</h3>
+  <p class="hours">Mon-Sat: 9 am to 5pm</p>
+  </div>
+  <div id="toronto-location" class="location-button">
+  <h3 class="address">4001 Steeles Avenue West, Toronto ON L4K 2Y2</h3>
+  <p class="hours">Mon, Wed, Fri: 10am to 6pm | Tue, Thu, Sat: 12pm to 9pm</p>
+  <p></p>
+  </div>
+  <div id="mississauga-location" class="location-button">
+  <h3 class="address">1305 Dixie Road Lakeview, Mississauga ON L5E 2P8</h3>
+  <p class="hours">Every 1st and 3rd Sunday of the month 9am to 5pm</p>
+  <p></p>
+  </div>
+  <div id="scarborough-location" class="location-button">
+  <h3 class="address">6415 Steeles Avenue East Scarborough, Toronto ON M1X 0C7</h3>
+  <p class="hours">Open everyday 11am to 3pm</p>
+  <p></p>
+  </div>
+  </div>{%- endcomment -%}
+<div class="map-container">
+  <iframe class="iframe-map" src={{map_url}} width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div></div><style>
+.store-locator-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 1270px;
+}
+
+.location-button {
+  display: inline-block;
+  height: 130px;
+  width: 500px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #D99191;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px #BF6385;
+  cursor: pointer;
+}
+
+.location-button:hover {
+  background-color: #BF6385;
+  box-shadow: 0 5px 5px #D99191;
+}
+
+.address {
+  margin: 0;
+}
+
+.map-container {
+  margin-top: 5px;
+}
+.locator-section-header {
+  text-align: center;
+}
+
+.iframe-map {
+  border: 2px dotted red;
+}
+
+@media only screen and (min-width: 1150px) and(max-width: 1450px) {
+  /* For mobile phones: */
+  .store-locator-container {
+    margin: auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 94vw;
+  }
+
+  .location-button {
+    width: 40vw;
+  }
+
+  .iframe-map {
+    width: 45vw !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and(max-width: 1149px) {
+  /* For mobile phones: */
+  .store-locator-container {
+    margin: auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 98vw;
+  }
+
+  .locations: {
+    width: 45vw;
+  }
+
+  .location-button {
+    width: 43vw;
+  }
+
+  .iframe-map {
+    width: 45vw !important;
+  }
+
+  .address {
+    font-size: 20px !important;
+  }
+
+  .hours {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .store-locator-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 98vw;
+  }
+
+  .locations {
+    width: 95vw;
+  }
+
+  .location-button {
+    height: 12vh;
+    width: 93vw;
+  }
+
+  .map-container {
+    width: 96vw;
+    padding-left: 1vw;
+  }
+
+  .iframe-map {
+    width: 93vw !important;
+  }
+
+  .address {
+    font-size: 16px !important;
+  }
+
+  .hours {
+    font-size: 11px !important;
+    margin: 0;
+  }
+}
+</style>{%- comment -%}
+Schema contains some skeletons of where I'd ideally like to go with it. 
 Making this section editable from the theme customizer would be nice. 
 Currently you can add a title from there, but being able to add new locations, and then 
 generating the location buttons by looping over the merchant-inputted data would make this 
-more easily editable. But I didn't think it wise to spend too much time coding that functionality {%- endcomment -%}
-
-{% schema %}
+more easily editable. But I didn't think it wise to spend too much time coding that functionality{%- endcomment -%}{% schema %}
 {
   "name": "Store Locator",
   "limit": 1,
@@ -207,27 +220,25 @@ more easily editable. But I didn't think it wise to spend too much time coding t
       "default": "Store Locator"
     }
   ],
-  "blocks" : [
+  "blocks": [
     {
-      "type" : "single-location",
-      "name" : "Location",
-      "settings" : [
-        {
-          "type" : "text",
-          "id" : "address",
-          "label" : "address",
-          "default" : "Address"
-        },
-        {
-          "type" : "text",
-          "id" : "description",
-          "label" : "Description",
-          "default" : "Description"
-        },
+      "type": "single-location",
+      "name": "Location",
+      "settings": [
         {
           "type": "text",
-          "id" : "maps-link",
-          "label" :  "Link",
+          "id": "address",
+          "label": "Address",
+          "default": "Address"
+        }, {
+          "type": "text",
+          "id": "hours",
+          "label": "Hours",
+          "default": "Hours"
+        }, {
+          "type": "text",
+          "id": "maps-link",
+          "label": "Link",
           "default": "Insert a Google Maps link"
         }
       ]
@@ -239,15 +250,11 @@ more easily editable. But I didn't think it wise to spend too much time coding t
     }
   ]
 }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
+{% endschema %}{% stylesheet %}
 
 {% javascript %}
 
-const log = () => {
-  console.log('Hello world')
-}
-
-{% endjavascript %}
+  const log = () => {
+    console.log('Hello world')
+  }
+{% endjavascript %}}}}}}}
