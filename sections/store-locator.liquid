@@ -28,7 +28,9 @@
 
 {% assign map_url = '"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92823.86575698238!2d-79.6074903428608!3d43.76349345574679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3b78887572cf%3A0xc2bd8fb5ca162f85!2s7855%20Finch%20Ave%20W%2C%20Brampton%2C%20ON%20L6T%200B2!5e0!3m2!1sen!2sca!4v1679017749378!5m2!1sen!2sca"' %}
 
-<h2 id="store-locator" class="locator-section-header">Store Locator</h2>
+{% if section.settings.heading != blank %} 
+<h2 id="store-locator" class="locator-section-header">{{section.settings.heading}}</h2>
+{% endif %}
     <div class="store-locator-container">
       <div class="locations">
         <div id="brampton-location" class="location-button">
@@ -192,9 +194,11 @@ Making this section editable from the theme customizer would be nice.
 Currently you can add a title from there, but being able to add new locations, and then 
 generating the location buttons by looping over the merchant-inputted data would make this 
 more easily editable. But I didn't think it wise to spend too much time coding that functionality {%- endcomment -%}
+
 {% schema %}
 {
   "name": "Store Locator",
+  "limit": 1,
   "settings": [
     {
       "type": "text",
